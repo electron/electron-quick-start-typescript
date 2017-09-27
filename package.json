@@ -1,14 +1,13 @@
 {
-  "name": "electron-quick-start-ts",
+  "name": "electron-quick-start-typescript",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "A minimal Electron application written with Typescript",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "start": "npm run build && electron ./dist/main.js"
   },
-  "repository": "https://github.com/electron/electron-quick-start-ts",
+  "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
     "Electron",
     "quick",
