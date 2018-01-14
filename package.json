@@ -19,8 +19,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.8",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.3"
+    "electron": "^1.8.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
   }
 }
