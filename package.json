@@ -20,7 +20,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.11",
+    "electron": "^1.8.4",
     "tslint": "^5.9.1",
     "typescript": "^2.6.2"
   }
