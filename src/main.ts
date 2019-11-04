@@ -1,7 +1,10 @@
+// Modules to control application life and create native browser window
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
 
-let mainWindow: Electron.BrowserWindow;
+// Keep a global reference of the window object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
+let mainWindow: BrowserWindow;
 
 function createWindow() {
   // Create the browser window.
@@ -14,10 +17,10 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "../index.html"));
+  mainWindow.loadFile("index.html");
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on("closed", () => {
@@ -35,7 +38,7 @@ app.on("ready", createWindow);
 
 // Quit when all windows are closed.
 app.on("window-all-closed", () => {
-  // On OS X it is common for applications and their menu bar
+  // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== "darwin") {
     app.quit();
@@ -43,12 +46,12 @@ app.on("window-all-closed", () => {
 });
 
 app.on("activate", () => {
-  // On OS X it"s common to re-create a window in the app when the
+  // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
     createWindow();
   }
 });
 
-// In this file you can include the rest of your app"s specific main process
+// In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
