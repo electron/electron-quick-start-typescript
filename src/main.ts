@@ -1,11 +1,9 @@
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
 
-let mainWindow: Electron.BrowserWindow;
-
 function createWindow() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  const mainWindow = new BrowserWindow({
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -18,14 +16,6 @@ function createWindow() {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
-
-  // Emitted when the window is closed.
-  mainWindow.on("closed", () => {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
-    mainWindow = null;
-  });
 }
 
 // This method will be called when Electron has finished
@@ -45,9 +35,7 @@ app.on("window-all-closed", () => {
 app.on("activate", () => {
   // On OS X it"s common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) {
-    createWindow();
-  }
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
 
 // In this file you can include the rest of your app"s specific main process
