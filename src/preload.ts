@@ -8,7 +8,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  for (const type of ["chrome", "node", "electron"]) {
-    replaceText(`${type}-version`, (process.versions as any)[type]);
-  }
+  const { chrome, node, electron } = process.versions;
+
+  replaceText(`chrome-version`, chrome);
+  replaceText(`node-version`, node);
+  replaceText(`electron-version`, electron);
 });
