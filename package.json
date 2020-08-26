@@ -6,7 +6,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "npm run build && electron ./dist/main.js",
+    "dev": "nodemon -e ts --exec npm run start"
   },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
@@ -21,7 +22,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^9.0.4",
+    "ts-node": "^9.0.0",
     "tslint": "^6.1.2",
     "typescript": "^3.9.5"
-  }
+  },
+  "dependencies": {}
 }
