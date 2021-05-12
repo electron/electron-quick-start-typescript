@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from "electron";
-import * as path from "path";
+import {join} from "path";
 
 function createWindow() {
   // Create the browser window.
@@ -12,7 +12,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "../index.html"));
+  mainWindow.loadFile(join(__dirname, "../index.html"));
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
