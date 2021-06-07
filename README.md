@@ -42,6 +42,7 @@ npm run watch
 ## Resources for Learning Electron
 
 - [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
+- [Electron Fiddle](https://electronjs.org/fiddle) - create, play, and share small Electron experiments
 - [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
 - [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
 - [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
