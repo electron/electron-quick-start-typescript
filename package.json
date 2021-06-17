@@ -24,7 +24,7 @@
     "@typescript-eslint/parser": "^4.27.0",
     "electron": "^13.1.2",
     "eslint": "^7.28.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.3"
   },
   "dependencies": {}
 }
