@@ -8,6 +8,7 @@
     "lint": "eslint -c .eslintrc --ext .ts ./src",
     "start": "npm run build && electron ./dist/main.js"
   },
+  "main": "./dist/main.js",
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
     "Electron",
