@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "concurrently": "^7.0.0",
-    "electron": "^17.0.0",
+    "electron": "^17.0.1",
     "eslint": "^7.32.0",
     "typescript": "^4.5.5"
   },
