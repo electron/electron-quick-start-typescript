@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // "esModuleInterop": true, // import will show red with this flag off
     "module": "commonjs",
     "noImplicitAny": true,
     "sourceMap": true,
